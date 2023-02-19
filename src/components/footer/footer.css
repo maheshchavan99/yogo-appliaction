@@ -1,0 +1,55 @@
+.footer {
+  width: 100%;
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 20px 0 50px;
+}
+.footer-heading{
+    display: flex;
+    align-items: center;
+}
+h2{
+    font-size: 20px;
+}
+.wrapper img{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.containt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.containt span {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #dddddd;
+  text-align: start;
+}
+.containt.col{
+    width: 350px;
+
+}
+.footer-icons{
+    font-size: 14px;
+    color: white;
+    margin-right: 10px;
+
+}
+.footer-icon{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    margin-top: 20px;
+}
+.socila-media-icon
+{
+    margin: 0px 10px;
+}

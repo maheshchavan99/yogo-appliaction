@@ -1,0 +1,45 @@
+.homebanner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    
+}
+.banner-left{
+    padding: 50px 0px 0px 50px;
+
+}
+.banner-containt{
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.banner-containt span{
+font-size: 20px;
+font-family: 'Inter';
+color: #959E9C;
+margin: 20px 0;
+}
+.banner-containt h2{
+    font-family: 'Inter';
+    font-size: 48px;
+}
+.banner-btn{
+width: 90px;
+padding: 8px;
+background: #57B99D;
+border-radius: 10px;
+border: none;
+color: white;
+}
+.banner-left{
+    width: 50%;
+}
+.banner-right{
+    width: 50%;
+
+}
+.banner-right img{
+    width: 100%;
+}

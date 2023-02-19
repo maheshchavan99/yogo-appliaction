@@ -1,0 +1,30 @@
+.studioyogo {
+  width: 100%;
+}
+.studioyogo-wrapper {
+  width: 58%;
+  margin-inline: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.studioyogo-wrapper h2 {
+  font-family: "Inter";
+  font-size: 40px;
+  text-align: center;
+
+}
+.studioyogo-wrapper span {
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: "Inter";
+  text-align: center;
+}
+
+.card-contents{
+  width: 100%;
+  padding: 5vh;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
