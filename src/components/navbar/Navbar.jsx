@@ -1,7 +1,6 @@
 import "./navbar.css";
 // import { images } from "../../assets/index";
 import { Menu,CancelOutlined } from "@mui/icons-material/";
-// import { useState} from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 function Navbar() {

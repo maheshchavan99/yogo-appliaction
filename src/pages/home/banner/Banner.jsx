@@ -1,7 +1,6 @@
 import "./banner.css";
 import {images} from '../../../assets/index'
 function Banner() {
-
   return (
     <div className="homebanner">
       <div className="banner-left">
