@@ -1,0 +1,65 @@
+.bookinng-yoga {
+  width: 85%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: 10vw auto 0px;
+  padding: 25px;
+}
+.bookinng-yoga .heading{
+  font-weight: 500;
+font-size: 24px;
+text-align: center;
+
+}
+.CancelOutlined{
+  float: right;
+  cursor:  pointer !important;
+}
+.bookleft-content{
+  display: flex;
+  justify-content: space-between;
+  color: #57B99D;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 30px 10px;
+}
+.bookin-left{
+  width: 30%;
+  border: 0.5px solid #9D9C9C;
+}
+.bookin-right{
+  width:70%;
+  padding: 0 5vw;
+  line-height: 30px;
+}
+.bookin-left .booking-image{
+  width: 100%;
+}
+.bookin-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.booking-details .deatils-left{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.deatilsleft{
+  display: flex;
+  justify-content: space-between;
+}
+.medium-bold{
+  font-size: 16px;
+  font-weight: bold;
+}
+.booking-btn{
+  width: 120px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #57B99D;;
+  border: none;
+  margin-top: 5vw;
+  cursor: pointer;
+}
