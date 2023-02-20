@@ -1,46 +1,26 @@
 import "./navbar.css";
-import { images } from "../../assets/index";
+// import { images } from "../../assets/index";
 import { Menu,CancelOutlined } from "@mui/icons-material/";
-import { useState} from "react";
+// import { useState} from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 function Navbar() {
-  // const [isNavBar, setNava] = useState(false);
-  // const hadlenavbar = () => {
-  //   setNava(true)
-  // };
-  return (
-    <div className="nav-warrper">
-      <img src={images.logo_icon} alt="yoga" />
-      
-        <ul>
-          <li>
-            <a href="" className="active">
-              Home
-            </a>
-          </li>
-          <li className="active">
-            <a href="" className="active">
-              Appointments
-            </a>
-          </li>
-          <li className="active">
-            <a href="" className="active">
-              Classes
-            </a>
-          </li>
-          <li className="active">
-            <a href="" className="active">
-              Service
-            </a>
-          </li>
-          <li className="active">
-            <a href="" className="active">
-              Contact
-            </a>
-          </li>
-        </ul>
-      
-      <Menu className="menu-icon"/>
-    </div>
+  const [isMobile,setIsMobile]=useState(true)
+  return(
+    <nav className="navbar">
+      <h1 className="nav-logo">Logo</h1>
+      <ul className={ isMobile?"nav-link":"mobile-nav-link"} onClick={(()=>setIsMobile(false))}>
+        <Link to='/' className="link-list">Home</Link>
+        <Link to='/' className="link-list">Home</Link>
+        <Link to='/' className="link-list">Home</Link>
+        <Link to='/' className="link-list">Home</Link>
+        <Link to='/' className="link-list">Home</Link>
+        <Link to='/' className="link-list nav-signin mobli-nav-signin">Signup</Link>
+      </ul>
+      <button className="mobile-menu-icon" onClick={(()=>setIsMobile(!isMobile))}>
+        {isMobile?<Menu className="menu-icon"/>:<CancelOutlined className="cancel-icon"/>}
+      </button>
+    </nav>
   );
 }
 
