@@ -7,7 +7,7 @@ import { store } from './store/index';
 import { axios } from 'axios';
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
-axios.defaults.baseURL = process.env.REACT_APP_BASE_URL
+// axios.defaults.baseURL = process.env.REACT_APP_BASE_URL
 root.render(
   <React.StrictMode>
     <Provider store={store}>
