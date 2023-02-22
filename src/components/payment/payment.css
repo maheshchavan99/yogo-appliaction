@@ -1,0 +1,62 @@
+.payment {
+  width: 50%;
+  margin: 4vw auto;
+  box-shadow: 0px 0px 3px grey;
+  padding: 2vw;
+  border-radius: 5px;
+}
+.payment h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.close-payment {
+  cursor: pointer;
+  font-size: 35px;
+  float: right;
+}
+.payment-wrpper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.payment-wrpper .payment-left,
+.payment-right {
+  border: 0.5px solid #9d9c9c;
+  padding: 2vw;
+}
+.payment-left h1 {
+  font-size: 28px;
+}
+.payment-bookin-info {
+  display: flex;
+  flex-direction: column;
+}
+.payment-bookin-info span {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.small-text-blod,
+.biling-header {
+  font-weight: bold;
+  font-size: 20px;
+}
+.billing {
+  display: flex;
+  flex-direction: column;
+}
+.billing-details span {
+  padding-top: 10px;
+  font-size: 20px;
+}
+.billing-details.col {
+  display: flex;
+  justify-content: space-between;
+}
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 1vh;
+}
