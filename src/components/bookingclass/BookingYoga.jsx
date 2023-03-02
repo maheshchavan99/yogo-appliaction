@@ -1,27 +1,35 @@
 import "./booking.css";
-import { images } from "../../assets/index";
 import { CancelOutlined } from "@mui/icons-material/";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 function BookingYoga() {
   const [isClose, setClose] = useState(true);
+  const storeValue=useSelector(state=>state)
+  const {classDeatails}=storeValue ||{}
+  const navigate=useNavigate()
+  const closepopUp=()=>{
+    setClose(false)
+    navigate('/')
+  }
   return (
     <>
       {isClose ? (
         <div className="bookinng-yoga">
           <CancelOutlined
             className="CancelOutlined"
-            onClick={() => setClose(false)}
+            onClick={closepopUp}
           />
           <h1 className="heading">BOOKING YOGA CLASSES</h1>
           <div className="bookin-container">
             <div className="bookin-left">
               <img
-                src={images.home_banner_image}
+                src={classDeatails.image}
                 alt=""
                 className="booking-image"
               />
               <div className="bookleft-content">
-                <span>Beginners Yoga</span>
+                <span>{classDeatails.title}</span>
                 <span>$20</span>
               </div>
             </div>
@@ -59,10 +67,10 @@ function BookingYoga() {
                   <span className="medium-bold">Instructor</span>
                 </div>
                 <div className="deatilsleft">
-                  <span className="medium">Thursday</span>
-                  <span className="medium">24-0-2023</span>
-                  <span className="medium">9:30 AM to 10:30 AM</span>
-                  <span className="medium">Denny Liose</span>
+                  <span className="medium">{classDeatails.day}</span>
+                  <span className="medium">{classDeatails.date}</span>
+                  <span className="medium">{classDeatails.time}</span>
+                  <span className="medium">{classDeatails.name}</span>
                 </div>
               </div>
               <button className="booking-btn">Book</button>

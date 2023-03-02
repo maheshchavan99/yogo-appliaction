@@ -1,6 +1,18 @@
 import Cards from "../../../components/cards/Cards";
 import "./studioyoga.css";
+import { cardData } from "../../../components/cards/data";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {userDetails} from "../../../store/userDetails";
 function StudioYoga() {
+  const navigator = useNavigate();
+  const dispatch = useDispatch()
+  const handleClick = (data) => {
+    if(data){
+      dispatch(userDetails(data))
+      navigator("/yogabook")
+    }
+  };
   return (
     <div className="studioyogo">
       <div className="studioyogo-wrapper">
@@ -12,12 +24,10 @@ function StudioYoga() {
         </span>
       </div>
       <div className="card-contents">
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
+        {cardData?.map((data) => (
+          <Cards cardData={data} handleClick={handleClick} id={data.id} />
+        ))}
       </div>
-
     </div>
   );
 }

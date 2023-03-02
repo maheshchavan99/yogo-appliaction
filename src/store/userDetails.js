@@ -3,7 +3,7 @@ export const user = createSlice({
   name: 'user',
   initialState:{},
   reducers: {
-   userdetails:(state,action)=>{
+   yogoDetails:(state,action)=>{
     return{
         ...state,
         ...action.payload
@@ -12,11 +12,11 @@ export const user = createSlice({
   },
 })
 
+export const {yogoDetails} = user.actions
 export default user.reducer
-export const {userdetails  } = user.actions
 export const userDetails=(param)=> async dispatch=>{
     try {
-        dispatch(userdetails(param))
+        dispatch(yogoDetails(param))
     } catch (error) {
         return console.log(error)  
     }

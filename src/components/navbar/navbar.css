@@ -11,6 +11,11 @@
   color: white;
   align-items: center;
   width: 100%;
+  position: fixed;
+  top: 0;
+}
+.logo{
+  width: 60px;
 }
 .nav-link{
   display: flex;

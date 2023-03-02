@@ -1,28 +1,26 @@
 import "./cards.css";
-import { images } from "../../assets/index";
-function Cards() {
+import { BOOK_SCHEDULS } from "../../utils/cms";
+function Cards({cardData,handleClick}) {
   return (
     <div className="cards">
-      <img src={images.home_banner_image} alt="" />
+      <img src={cardData.image} alt="" />
       <div className="card-wrapper">
-        <h2>Beginners Yoga</h2>
+        <h2>{cardData.title}</h2>
         <div className="contents">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          rutrum, sem ac euismod venenatis, turpis sapien ultrices dui, non
-          sollicitudin
+         {cardData.desc}
         </div>
         <hr />
         <div className="card-container">
           <div className="card-left">
-            <span>TIMING :</span>
-            <span className="date-time">9:30 AM to 10:30 AM</span>
+            <span>{cardData.timelable} :</span>
+            <span className="date-time">{cardData.time}</span>
           </div>
           <div className="card-rigth">
-            <span>INSTRUCTOR</span>
-            <span className="name">DENNIY LIOSE </span>
+            <span>{cardData.instructorlable}</span>
+            <span className="name">{cardData.name} </span>
           </div>
         </div>
-        <button>BOOK schedule</button>
+        <button onClick={(()=>handleClick(cardData))}>{BOOK_SCHEDULS}</button>
       </div>
     </div>
   );
